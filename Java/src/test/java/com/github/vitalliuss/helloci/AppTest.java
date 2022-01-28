@@ -2,6 +2,8 @@ package com.github.vitalliuss.helloci;
 
 
 import static org.junit.Assert.*;
+
+import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -35,5 +37,10 @@ public class AppTest {
 	@Test
 	public void testAnotherClass() {
 		EmptyClass.emptyMethod();
+	}
+
+	@Test
+	public void testSayHiMethod() {
+		Assert.assertEquals(App.sayHi(), "Hello CI!");
 	}
 }
